@@ -7,11 +7,9 @@ import Detail from "./pages/Datail";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename="/adrenalin">
-        <Switch>
-          <Route exact path="/" component={Listing} />
-          <Route path="/detail/:slug" component={Detail} />
-        </Switch>
+      <HashRouter>
+        <Route exact path="/" component={Listing} />
+        <Route path="/detail/:slug" component={Detail} />
       </HashRouter>
     </div>
   );
