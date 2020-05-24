@@ -1,0 +1,157 @@
+/* NAV & FOOTER*/
+.nav,
+.footer {
+  grid-column-start: 2;
+  color: var(--nav-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  border-top: 2px solid #000000;
+}
+
+.nav ul,
+.footer ul {
+  flex-basis: 40%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li,
+.footer ul li {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  transition: opacity 250ms ease-in-out;
+}
+
+.nav ul li:hover,
+.footer ul li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 250ms ease-in-out;
+}
+
+/* TILES */
+.tiles-container {
+  grid-column-start: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tiles-container .tile {
+  text-decoration: none;
+  color: var(--title-color);
+  flex-basis: 49%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.tile .thumbnail {
+  position: relative;
+}
+
+.tile .thumbnail img {
+  width: 100%;
+}
+
+.tile .thumbnail .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%) rotate(-90deg);
+  transform-origin: right top;
+  background: var(--tag-background);
+  color: var(--tag-color);
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.tile .title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.tile .view {
+  display: flex;
+  align-items: center;
+}
+
+.tile .view div {
+  width: 32px;
+  height: 2px;
+  background: var(--accent-color);
+  margin-right: 16px;
+}
+
+.tile .view span {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* DETAIL CONTENT */
+.detail-content {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.detail-content .image-container {
+  flex-basis: 46%;
+}
+
+.detail-content .image-container img {
+  width: 100%;
+}
+
+.detail-content .details {
+  flex-basis: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.detail-content .details .title {
+  font-size: 68px;
+  font-weight: 700;
+  color: var(--title-color);
+  text-align: left;
+}
+
+.detail-content .details .sort {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: opacity 200ms ease-in-out;
+}
+
+.detail-content .details .sort:hover {
+  opacity: 0.8;
+  transition: opacity 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.detail-content .details .content {
+  display: flex;
+  flex-direction: column;
+}
