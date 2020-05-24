@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className={styles.nav}>
-      <Link className={styles.logo} to="/adrenalin">
+      <Link className={styles.logo} to="/">
         <img src={adrenalin} alt="logo" />
       </Link>
 
