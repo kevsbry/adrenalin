@@ -12,3 +12,9 @@
   display: grid;
   grid-template-columns: 1.4fr 8fr 1.4fr;
 }
+
+@media (max-width: 500px) {
+  .page {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}

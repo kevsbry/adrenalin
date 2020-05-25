@@ -1,6 +1,6 @@
 # Adrenalin (ReactJS Test)
 
-Foobar is a Python library for dealing with word pluralization.
+React project test for Flexisource IT
 
 ## Project Structure
 
@@ -21,19 +21,20 @@ Pages and Components have their own folder.
 
 Website design has been followed according to the given instructions and sketch file.
 
+- Mobile Responsive
 - Merriweather and Roboto fonts used
-- Font weight, color, size, spacing have been followed
+- Font weight, color, size, spacing have been followed / RESPONSIVE
 - Grid System and Flex Boxes implemented
 
 ## Data
 
-Data from /feed/data.json has been consumed using axios and rendered to the page.
+Data from feed/data.json has been fetched using axios and rendered to the page.
 
 ## Routes
 
-React router has been implemented in this project and `/adrenalin` is set as homepage, each tile is clickable will redirect the user to the `/detail/:slug` when clicked, each content-detail has its's own slug which has been fetch from data.json file
+React router has been implemented in this project and each detail has its own route depending on the slug provided by feed/data.json
 
 ```
-/adrenalin
-/detail/slug
+home => /
+detail page => /detail/:slug
 ```

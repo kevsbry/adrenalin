@@ -47,7 +47,7 @@ const DetailContent = ({ slug }) => {
 
     return (
       <div className={styles.content}>
-        <span style={style.title}> Content title {num + 1}</span>
+        <span className={styles.title}> Content title {num + 1}</span>
         <div style={style.dateContainer}>
           <div style={style.line}></div>
           <span style={style.date}>{formattedDate}</span>
