@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import styles from "./style.module.css";
+import styles from "../styles/components.module.css";
 import adrenalin from "../assets/adrenalin.svg";
 import { Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import styles from "./style.module.css";
+import styles from "../styles/components.module.css";
 
 const Tiles = () => {
   const [tilesConent, setTilesContent] = useState([]);
@@ -20,12 +20,12 @@ const Tiles = () => {
       <Link to={`/detail/${slug}`} className={styles.tile}>
         <div className={styles.thumbnail}>
           <img src={require(`../assets/${thumb}`)} alt="thumbnail" />
-          <span className={styles.tag}>{tag}</span>
+          <h6 className={styles["image-tag"]}>{tag}</h6>
         </div>
-        <spant className={styles.title}>{title}</spant>
+        <h1 className={styles.title}>{title}</h1>
         <div className={styles.view}>
           <div></div>
-          <span>view case study</span>
+          <h5>view case study</h5>
         </div>
       </Link>
     );
